@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Restaurant</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <div class="container">
+    <div class="jumbotron">
+      <h1>Restaurant</h1>
+      <h3>Make a reservation</h3>
+      <hr>
+      <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-list-alt"></span> <a href="tables.html" style="color: #fff">View Table</a></button>
+      <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-home"></span><a href="index.html" style="color: #fff"> Home</a></button>
+      
+    </div>
+    <div class="row">
+  
+
+
+      <div class="col-lg-12">
+
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h3 class="panel-title"><strong>Table Reservation</strong></h3>
+          </div>
+          <div class="panel-body">
+                <label>Name</label>
+            <input type="text" id="name" class="form-control">
+            <br>
+            <label>Phone Number</label>
+            <input type="text" id="phone" class="form-control">
+            <br>
+            <label>Email</label>
+            <input type="text" id="email" class="form-control">
+            <br>
+            <label>Unique ID</label>
+            <input type="text" id="uniqueID" class="form-control">
+            <br>
+            <div class="text-right">
+              <button type="submit" class="btn btn-primary btn-md" id="search-btn"><span class="glyphicon glyphicon-search"></span> Book A Table</button>
+            </div>
+          </div>
+        </div>
+
+    
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+        <div class="container">
+              <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
+        </div>
+      </footer>
