@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>Star Wars - Express</title>
@@ -9,28 +10,42 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 </head>
+
 <body>
 
   <div class="container">
     <div class="jumbotron">
-      <h1>Restaurant</h1>
-      <h3>A thing about a thing!</h3>
-      <hr>
-      <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-list-alt"></span><a href="tables.html" style="color: #fff"> View Tables</a></button>
-      <button type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-credit-card"></span><a href="reserve.html" style="color: #fff"> Make Reservations</a></button>
-      
+      <h1 class="text-center">
+        <span class="glyphicon glyphicon-fire">Hot Restaurant</span>
+      </h1 class="text-center">
+
+      <h3 class="text-center">Current Reservations and Waiting List</h3>
+      <hr class="text-center">
+      <div class="text-center">
+        <button type="button" class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-list-alt"></span>
+          <a href="tables.html" style="color: #fff"> View Tables</a>
+        </button>
+        <button type="button" class="btn btn-danger btn-lg">
+          <span class="glyphicon glyphicon-credit-card"></span>
+          <a href="reserve.html" style="color: #fff"> Make Reservations</a>
+        </button>
+      </div>
     </div>
     <div class="row">
-  
 
-            <footer class="footer">
-                    <div class="container">
-                          <p><a href="/api/tables">API Table Link</a> | <a href="/api/waitlist">API Wait List</a></p>
-                    </div>
-                  </footer>
+
+      <footer class="footer">
+        <div class="container">
+          <p class="text-center">
+            <a href="/api/tables">API Table Link</a> |
+            <a href="/api/waitlist">API Wait List</a>
+          </p>
+        </div>
+      </footer>
 
       <!-- <div class="col-lg-12"> -->
-<!-- 
+      <!-- 
         <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Character Search</strong></h3>
@@ -44,7 +59,7 @@
           </div>
         </div> -->
 
-        <!-- <div class="panel panel-default">
+      <!-- <div class="panel panel-default">
           <div class="panel-heading">
             <h3 class="panel-title"><strong>Character Statistics</strong></h3>
           </div>
