@@ -25,24 +25,24 @@ var waitinglistData = [];
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/home", function (req, res) {
-    res.sendFile(path.join(__dirname, "/index.html"));
+    res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
 app.get("/reserve", function (req, res) {
-    res.sendFile(path.join(__dirname, "/reserve.html"));
+    res.sendFile(path.join(__dirname, "/public/reserve.html"));
 });
 
 app.get("/tables", function (req, res) {
-    res.sendFile(path.join(__dirname, "/tables.html"));
+    res.sendFile(path.join(__dirname, "/public/tables.html"));
 });
 
 // Get all tableData
-app.get("/tablelistData", function (req, res) {
+app.get("/api/tables", function (req, res) {
     res.json(tableData);
 });
 
 // Get all waitinglistData
-app.get("/waitinglistData", function (req, res) {
+app.get("/api/waitlist", function (req, res) {
     res.json(waitinglistData);
 });
 
