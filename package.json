@@ -1,0 +1,25 @@
+{
+  "name": "restaurant",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michellechristina/restaurant.git"
+  },
+  "keywords": [],
+  "author": "Justin Rice <jsrice7391@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michellechristina/restaurant/issues"
+  },
+  "homepage": "https://github.com/michellechristina/restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
