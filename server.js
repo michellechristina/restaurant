@@ -7,7 +7,7 @@ var path = require("path");
 // Sets up the Express App
 // =============================================================
 var app = express();
-var PORT = 3000;
+var PORT = 3900;
 
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({
@@ -24,30 +24,30 @@ var waitinglistData = [];
 // =============================================================
 
 // Basic route that sends the user first to the AJAX Page
-app.get("/", function (req, res) {
+app.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "/public/index.html"));
 });
 
-app.get("/reserve", function (req, res) {
+app.get("/reserve", function(req, res) {
     res.sendFile(path.join(__dirname, "/public/reserve.html"));
 });
 
-app.get("/tables", function (req, res) {
+app.get("/tables", function(req, res) {
     res.sendFile(path.join(__dirname, "/public/tables.html"));
 });
 
 // Get all tableData
-app.get("/api/tables", function (req, res) {
+app.get("/api/tables", function(req, res) {
     res.json(tableData);
 });
 
 // Get all waitinglistData
-app.get("/api/waitlist", function (req, res) {
+app.get("/api/waitlist", function(req, res) {
     res.json(waitinglistData);
 });
 
 // Create New Characters - takes in JSON input
-app.post("/api/new", function (req, res) {
+app.post("/api/new", function(req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body-parser middleware
     var newcharacter = req.body;
@@ -62,6 +62,6 @@ app.post("/api/new", function (req, res) {
 
 // Starts the server to begin listening
 // =============================================================
-app.listen(PORT, function () {
+app.listen(PORT, function() {
     console.log("App listening on PORT " + PORT);
 });
